@@ -1,4 +1,3 @@
-hw2.ml
+(*hw2.ml*)
 
 
-are  you fuckin kidding me
