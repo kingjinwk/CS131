@@ -1,2 +1,5 @@
 hw2.txt
 
+Scan left and parse the right.
+
+Blind alley rules don't work
