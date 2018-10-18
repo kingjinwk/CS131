@@ -4,17 +4,16 @@
 (*helper function parses through the grammar and convert grammar passes it the list of grammars*)
 let convert_grammar gram1 =
 	let start = (fst gram1) and glist = (snd gram1) in 
-	match b with
+	match glist with
 	| [] -> []
 	| hd::tl -> (start, helper glist start)
 ;;
 	
 let rec helper glist start = 
-	let a = (fst gramlist) and b = (snd gramlist) in
+	let a = (List.hd glist) and b = (List.tl glist) in
 	match a with
 	| [] -> []
-	| (a,b) -> if (fst a) = start then (snd a)::helper (gram1 tl) start
-	| t -> helper (gram1 tl) start
+	| (x,y) -> if x = start then y::helper b start else helper b start
 ;;
 
 	(*if hd = hd::function2 then hd::function2 tl else function2 tl*)
